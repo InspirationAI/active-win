@@ -68,22 +68,6 @@ module.exports.sync = options => {
 	throw new Error('macOS, Linux, and Windows only');
 };
 
-module.exports.start = () => {
-	if (process.platform === 'win32') {
-		return urlCaptureApi.start();
-	}
-
-	throw new Error('Windows only');
-};
-
-module.exports.stop = () => {
-	if (process.platform === 'win32') {
-		return urlCaptureApi.stop();
-	}
-
-	throw new Error('Windows only');
-};
-
 module.exports.getOpenWindows = options => {
 	if (process.platform === 'darwin') {
 		return require('./lib/macos.js').getOpenWindows(options);

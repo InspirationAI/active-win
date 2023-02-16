@@ -78,9 +78,9 @@
   ],
   "devDependencies": {
     "ava": "^2.4.0",
+    "node-pre-gyp-github": "^1.4.4",
     "tsd": "^0.14.0",
-    "xo": "^0.38.2",
-    "node-pre-gyp-github": "^1.4.4"
+    "xo": "^0.38.2"
   },
   "optionalDependencies": {
     "@mapbox/node-pre-gyp": "^1.0.10",
@@ -99,6 +99,7 @@
     "verbose": true
   },
   "dependencies": {
+    "@insp/url-capture": "^1.2.0",
     "bindings": "^1.5.0"
   }
 }
